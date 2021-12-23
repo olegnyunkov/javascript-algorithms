@@ -14,7 +14,15 @@
 */
 
 function palindrome(str) {
-    str.split('');
+    const arr = str.toLowerCase();
+    const normArr = arr.split('');
+    const revArr = normArr.reverse();
+    const word = revArr.join('');
+    if (arr === word) {
+      return true;
+    } else {
+      return false;  
+    }    
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
