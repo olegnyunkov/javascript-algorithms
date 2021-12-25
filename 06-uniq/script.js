@@ -8,8 +8,10 @@
 */
 
 function uniq(arr) {
-    // Напишите код здесь
-}
+    const result = arr.filter((el, pos, arr) => pos === arr.indexOf(el))
+    return result
+    }
+
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
 

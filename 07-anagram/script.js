@@ -9,7 +9,15 @@
 */
 
 function anagram(str1, str2) {
-    // Напишите код здесь
+    const word = str1.toLowerCase();
+    const resWord = word.split('').sort().join('');
+    const nextWord = str2.toLowerCase();
+    const resNextWord = nextWord.split('').sort().join('');
+    if (resWord === resNextWord && word !== nextWord) {
+      return true
+    } else {
+      return false
+    }
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
