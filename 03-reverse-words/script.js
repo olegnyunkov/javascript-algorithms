@@ -8,15 +8,8 @@
  *
 */
 
-function reverseWords(str) {
-    let arr = str.split(' ');
-    console.log(arr)
-    let revArr = arr.reverse();
-    console.log(revArr)
-    let strRevArrJ = revArr.join(' ')
-    let strRevArr = strRevArrJ.toString;
-  
-  return strRevArrJ;
+function reverseWords(str) {  
+  return str.split(' ').reverse().join(' ');
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
